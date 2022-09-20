@@ -37,7 +37,7 @@ width: 50%;
 .Block{
     background-color: #C9DAEA;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 15px 0 15px 0;
     margin: 1.5rem;
     margin-top: 15px;
     width: 50%;
@@ -47,6 +47,9 @@ width: 50%;
 .blockCollection{
     display: flex;
 
+}
+.Subjects{
+    display: flex;
 }
 
 .Block p{
@@ -59,10 +62,22 @@ width: 50%;
 
 .subjects-list li{
     padding-bottom: 0.2rem;
+    border-bottom: 1px #C9DAEA solid;
+    border-right: 3px black solid;
+    padding-right: 2rem;
 }
 
 .subjects-list{
     width: 15%;
+    background-color: #3c6e9c;
+    border-radius: 15px 0 0 0
 }
 
-    
+.subject-title{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.subjects-list li:hover{
+    background-color: black;
+}
