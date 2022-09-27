@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="script.js"></script>
     <title>Curio Flyer</title>
 </head>
 <body>
-    <main>
+    <header>
         <div class="mainP-background">
             <div class="headerlogo">
                 <div class="logo">
@@ -16,37 +19,92 @@
                 </div>
             </div>
         </div>
+    </header>
+    <main>
         <div class="wrapper">
             <div class="blockCollection">
-                <div class="Block">
+                <div class="block">
                     <div class="wisTitle">
                         <h3>Over de opleiding</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eum ut quidem voluptatem neque, veritatis magni error fugiat ipsum cumque corporis veniam nobis culpa voluptate dicta id iusto sequi porro. A nemo repellat quam accusantium recusandae eligendi maxime excepturi veniam iure repudiandae dolor alias iste consequuntur labore consequatur autem, temporibus saepe reiciendis natus. Rem iste quisquam quae obcaecati sapiente incidunt fugiat dignissimos, eligendi laudantium, adipisci vel enim suscipit excepturi in, totam distinctio odit maiores? Recusandae velit quis sapiente tenetur fugit ea, quo commodi reiciendis. Nesciunt dicta ex enim facilis totam rem, debitis repellat illum minima optio voluptatem autem. Labore, officiis.
+                    <p> nobis culpa voluptate dicta id iusto sequi porro. A nemo repellat quam accusantium recusandae eligendi maxime excepturi veniam iure repudiandae dolor alias iste consequuntur labore consequatur autem, temporibus saepe reiciendis natus. Rem iste quisquam quae obcaecati sapiente incidunt fugiat dignissimos, eligendi laudantium, adipisci vel enim suscipit excepturi in, totam distinctio odit maiores? Recusandae velit quis sapiente tenetur fugit ea, quo commodi reiciendis. Nesciunt dicta ex enim facilis totam rem, debitis repellat illum minima optio voluptatem autem. Labore, officiis.
                     </p>
                 </div>
-                <div class="Block">
-                    <div class="Subjects">
-                        <div class="subjects-list">
-                            <ul>
-                                <li>Pra</li>
-                                <li>Pro</li>
-                                <li>Native</li>
-                                <li>Algo</li>
-                                <li>web</li>
+                <div class="block">
+                    <h3> De vakken</h3>
+                    <div class="subjects">
+                        <div class="subject-list">
+                            <ul id="subjectList">
+                                <li><a href="#" id="Pro" onclick="Pro()">Pro</a></li>
+                                <li><a href="#" id="Pra" onclick="Pra()">Pra</a></li>
+                                <li><a href="#" id="Native" onclick="Native()">Native</a></li>
+                                <li><a href="#" id="Web" onclick="Web()">Web</a></li>
                             </ul>
                         </div>
-                        <div class="subjectsExpl">
-                            <h3>Vakken</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, minus non laboriosam unde tempora doloribus maiores explicabo sint error omnis sapiente possimus excepturi beatae quisquam ut porro amet quas officia!</p>
+                        <div class="subject" id="subTxt">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum sunt qui provident rem possimus? Delectus quia nam voluptates adipisci molestiae temporibus non deserunt, dignissimos exercitationem veniam hic doloribus optio magni!</p>
                         </div>
                     </div>
                 </div>
-            </div>
+                    <div class="block large" id="Slider.container"> 
+                        <h2>Docenten</h2>
+                        <div class="docentBlock" >
+                            <div class="docentInfo">
+                                <div class="docentImg">
+                                    <img src="img/placeholder.png" alt="">
+                                </div>
+                                <div class="docentText">
+                                    <h5>Docent Naam</h5>
+                                </div>
+                            </div>
+                            <div class="docentBlock" >
+                                <div class="docentInfo">
+                                    <div class="docentImg">
+                                        <img src="img/placeholder.png" alt="">
+                                    </div>
+                                    <div class="docentText">
+                                        <h5>Docent Naam</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="docentBlock" >
+                                <div class="docentInfo">
+                                    <div class="docentImg">
+                                        <img src="img/placeholder.png" alt="">
+                                    </div>
+                                    <div class="docentText">
+                                        <h5>Docent Naam</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="block large">
+                        <div class="Schedule">
+                            <h2>Mijn Rooster</h2>
+                                <div class="mySchedule">
+                                    <img src="img/scheduleImg.png" alt="mySchedule" class="ScheduleImg">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h2>Versnellen</h2>
+                        <div class="VersnellenTxt">
+                            <p>Om de opleiding te gaan versnellen moet je in het eerste blok van jaar 1 van de opleiding. Alles in het groen hebben oftwel meer dan 90% van wat je hebt ingeleverd is goed afgerond. <br>
+                                Bij het versnellen sla je jaar 4 over of ook wel genoemd stageJaar waar je 1 jaar lang bij een bedrijf stage gaat lopen. Het eerste jaar van het versnellen is identiek aan de normale opleiding. Na het 2e jaar begin je met een nieuw vak die je normaal pas in het 3e jaar krijgt, Burgerschap.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h2>benodigheden</h2>
+                        <div >
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum necessitatibus iusto temporibus praesentium eaque quasi officia harum voluptatum quis, tenetur incidunt atque ab voluptatem culpa debitis. Praesentium voluptates nam quidem!</p>
+                        </div>
+                    </div>
         </div>
     </main>
     <footer>
-
     </footer>
 </body>
 </html>
